@@ -51,11 +51,11 @@ button {
 }
 button:hover {
   cursor: pointer;
-  transform: scale(0.99);
+  transform: scale(1.05);
   /* transform: scale(1.02); */
 }
 button:active {
-  transform: scale(0.98);
+  transform: scale(1);
 }
 
 /* NAVBAR */
@@ -93,9 +93,15 @@ nav {
       background-color: white;
       list-style: none;
     }
-    svg {
-      fill: #34495e;
+    .icon-containers:hover {
+      cursor: pointer;
+      transform: scale(1.05);
     }
+    .icon-containers:active {
+      cursor: pointer;
+      transform: scale(1);
+    }
+
     .facebook {
       position: absolute;
       bottom: 0px;
@@ -260,8 +266,16 @@ footer {
   .mobile-contact {
     display: none;
     background-color: #8dc153;
-    width: 100%;
-    padding: 12px 0;
+    button {
+      width: 100%;
+      padding: 12px 0;
+    }
+    button:hover {
+      transform: scale(1.05);
+    }
+    button:active {
+      transform: scale(1);
+    }
   }
   .footer-links {
     display: flex;

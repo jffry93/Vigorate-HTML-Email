@@ -50,11 +50,11 @@ button {
 
 button:hover {
   cursor: pointer;
-  transform: scale(0.99);
+  transform: scale(1.05);
   /* transform: scale(1.02); */ }
 
 button:active {
-  transform: scale(0.98); }
+  transform: scale(1); }
 
 /* NAVBAR */
 nav {
@@ -85,8 +85,12 @@ nav {
       overflow: hidden;
       background-color: white;
       list-style: none; }
-    nav .social svg {
-      fill: #34495e; }
+    nav .social .icon-containers:hover {
+      cursor: pointer;
+      transform: scale(1.05); }
+    nav .social .icon-containers:active {
+      cursor: pointer;
+      transform: scale(1); }
     nav .social .facebook {
       position: absolute;
       bottom: 0px;
@@ -208,9 +212,14 @@ footer {
   text-align: center; }
   footer .mobile-contact {
     display: none;
-    background-color: #8dc153;
-    width: 100%;
-    padding: 12px 0; }
+    background-color: #8dc153; }
+    footer .mobile-contact button {
+      width: 100%;
+      padding: 12px 0; }
+    footer .mobile-contact button:hover {
+      transform: scale(1.05); }
+    footer .mobile-contact button:active {
+      transform: scale(1); }
   footer .footer-links {
     display: flex;
     justify-content: center;
