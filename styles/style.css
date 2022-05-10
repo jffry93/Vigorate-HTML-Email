@@ -85,6 +85,8 @@ nav {
       overflow: hidden;
       background-color: white;
       list-style: none; }
+      nav .social .icon-containers a {
+        display: flex; }
     nav .social .icon-containers:hover {
       cursor: pointer;
       transform: scale(1.05); }
@@ -94,7 +96,7 @@ nav {
     nav .social .facebook {
       position: absolute;
       bottom: 0px;
-      right: 2px;
+      right: 3.5px;
       height: 25px; }
     nav .social .twitter {
       width: 20px;

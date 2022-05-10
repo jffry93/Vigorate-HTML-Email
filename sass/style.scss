@@ -92,6 +92,9 @@ nav {
       overflow: hidden;
       background-color: white;
       list-style: none;
+      a {
+        display: flex;
+      }
     }
     .icon-containers:hover {
       cursor: pointer;
@@ -105,7 +108,7 @@ nav {
     .facebook {
       position: absolute;
       bottom: 0px;
-      right: 2px;
+      right: 3.5px;
       height: 25px;
     }
     .twitter {
