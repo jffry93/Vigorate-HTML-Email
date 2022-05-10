@@ -54,7 +54,7 @@ button {
 
 button:hover {
   cursor: pointer;
-  transform: scale(1.05);
+  transform: scale(1.02);
   /* transform: scale(1.02); */ }
 
 button:active {
@@ -106,7 +106,7 @@ nav {
         border-radius: 50%; }
     nav .social .icon-containers:hover {
       cursor: pointer;
-      transform: scale(1.05); }
+      transform: scale(1.03); }
     nav .social .icon-containers:active {
       transform: scale(1); }
     nav .social .facebook {
