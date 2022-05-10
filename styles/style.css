@@ -59,11 +59,17 @@ button:active {
 /* NAVBAR */
 nav {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   color: white;
   background-color: #34495e;
-  padding: 32px; }
+  padding: 24px 0; }
+  nav .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    max-width: 1200px;
+    padding: 0px 32px; }
   nav .line {
     display: none; }
   nav .logo {
@@ -86,7 +92,9 @@ nav {
       background-color: white;
       list-style: none; }
       nav .social .icon-containers a {
-        display: flex; }
+        display: flex;
+        align-items: center;
+        justify-content: center; }
     nav .social .icon-containers:hover {
       cursor: pointer;
       transform: scale(1.05); }
@@ -115,7 +123,9 @@ nav {
   padding: 32px;
   display: flex;
   flex-direction: column;
-  gap: 24px; }
+  gap: 24px;
+  max-width: 1200px;
+  margin: auto; }
 
 /* BULLET POINTS */
 .bullet-points {
@@ -235,10 +245,10 @@ footer {
 
 @media only screen and (max-width: 600px) {
   nav {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
     padding: 16px; }
+    nav .content {
+      flex-direction: column;
+      gap: 10px; }
     nav .line {
       display: block;
       width: 100%;
