@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Urbanist', sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+h1 {
+  font-size: clamp(35px, 6vw, 50px);
+  line-height: 1.07143;
+  letter-spacing: 0.05em;
+  font-weight: 400;
+}
+h2 {
+  font-size: clamp(32px, 3vw, 48px);
+  /* font-weight: lighter; */
+  line-height: 1.07143;
+  letter-spacing: -0.005em;
+}
+h3 {
+  font-size: clamp(21px, 4vw, 28px);
+  line-height: 1.14286;
+  letter-spacing: 0.007em;
+}
+h4 {
+  font-size: clamp(17px, 3vw, 20px);
+  line-height: 1.14286;
+  letter-spacing: 0.007em;
+}
+h5 {
+  font-size: clamp(0.9rem, 0.5vw, 1rem);
+  font-weight: 300;
+  letter-spacing: 0px;
+  line-height: 1.381;
+}
+p {
+  font-size: clamp(16px, 1.2vw, 17px);
+  line-height: 20.001001358032227px;
+  letter-spacing: clamp(0.011em, 0.5vw, 0.022em);
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+}
+button:hover {
+  cursor: pointer;
+  transform: scale(0.99);
+  /* transform: scale(1.02); */
+}
+button:active {
+  transform: scale(0.98);
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  background-color: #34495e;
+
+  padding: 32px;
+  .line {
+    display: none;
+  }
+  .logo {
+    /* font-size: 42px; */
+    letter-spacing: 0.05px;
+  }
+  .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    .icon-containers {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 33px;
+      height: 33px;
+      border-radius: 50%;
+
+      position: relative;
+      overflow: hidden;
+      background-color: white;
+      list-style: none;
+    }
+    svg {
+      fill: #34495e;
+    }
+    .facebook {
+      position: absolute;
+      bottom: 0px;
+      right: 2px;
+      height: 25px;
+    }
+    .twitter {
+      width: 20px;
+      height: 20px;
+    }
+    .spotify {
+      transform: rotate(49deg);
+      position: absolute;
+      bottom: 3px;
+      left: 2.5px;
+      height: 23px;
+      width: 23px;
+    }
+  }
+}
+
+/* MAIN CONTAINER */
+.main-container {
+  background-color: #ffffff;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* BULLET POINTS */
+.bullet-points {
+  padding: 0px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  li {
+    font-size: clamp(15px, 1.2vw, 17px);
+    padding-left: 24px;
+    letter-spacing: 0.05px;
+  }
+}
+
+// PRICE CONTAINER
+.price-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+
+  padding-top: 12px;
+
+  margin: auto;
+  width: 100%;
+  max-width: 700px;
+  .plan {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .price {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3px;
+
+      padding: 16px;
+      width: 100%;
+      color: white;
+    }
+    .details {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+
+      width: 100%;
+      padding: 16px;
+
+      .line {
+        height: 1px;
+        width: 90%;
+        margin: 8px;
+        background-color: black;
+      }
+    }
+    .trial {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      button {
+        padding: 6px;
+        margin: 24px;
+        color: white;
+      }
+    }
+  }
+  .basic {
+    .price {
+      background-color: #50c1e9;
+    }
+    .details {
+      background-color: #d6f1fa;
+      .line {
+        background-color: rgba(176, 226, 246, 0.9);
+      }
+    }
+    .trial {
+      background-color: #e6e9ee;
+      button {
+        background-color: #50c1e9;
+      }
+    }
+  }
+  .unlimited {
+    .price {
+      background-color: #ffcf54;
+    }
+    .details {
+      background-color: #fffaee;
+      .line {
+        background-color: rgba(255, 207, 84, 0.9);
+      }
+    }
+    .trial {
+      background-color: #e6e9ee;
+      button {
+        background-color: #ffcf54;
+      }
+    }
+  }
+}
+
+// CONTACT-CONTAINER
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+  h2 {
+    font-weight: 400;
+  }
+  button {
+    margin: 6px;
+
+    padding: 12px 60px;
+    border-radius: 8px;
+    font-weight: 500;
+    color: white;
+    background-color: #8dc153;
+  }
+}
+
+// FOOTER
+footer {
+  background-color: #34495e;
+
+  color: white;
+  text-align: center;
+  .mobile-contact {
+    display: none;
+    background-color: #8dc153;
+    width: 100%;
+    padding: 12px 0;
+  }
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 32px 0;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    a:hover {
+      color: rgb(231, 231, 231);
+    }
+  }
+}
+
+//MOBILE
+@media only screen and (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 16px;
+    .line {
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: white;
+    }
+    .social {
+      gap: 20px;
+      .icon-containers {
+        width: 30px;
+        height: 30px;
+      }
+      .facebook {
+        position: absolute;
+        bottom: 0px;
+        right: 4.5px;
+        height: 23px;
+      }
+      .twitter {
+        width: 18px;
+        height: 18px;
+      }
+      .spotify {
+        transform: rotate(47deg);
+        position: absolute;
+        bottom: 3px;
+        left: 2.5px;
+        height: 21px;
+        width: 21px;
+      }
+    }
+  }
+  .main-container {
+    padding: 24px 16px 0;
+
+    // gap: 24px;
+  }
+  .bullet-points {
+    padding: 0px 32px;
+    display: flex;
+    flex-direction: column;
+    li {
+      padding-left: 16px;
+      letter-spacing: 1.5px;
+    }
+  }
+  .price-container {
+    flex-direction: column;
+    padding: 12px 16px 0;
+
+    padding-top: 0px;
+
+    .plan {
+      width: 100%;
+    }
+  }
+  .contact-container {
+    display: none;
+  }
+  footer {
+    margin-top: 32px;
+    .mobile-contact {
+      display: block;
+      button {
+        color: white;
+        font-weight: 500;
+        font-size: 15px;
+      }
+    }
+    .footer-links {
+      padding: 16px;
+      font-size: 15px;
+    }
+  }
+}
