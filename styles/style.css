@@ -69,7 +69,7 @@ nav {
     justify-content: space-between;
     width: 100%;
     margin: auto;
-    max-width: 1200px;
+    max-width: 900px;
     padding: 0px 32px; }
   nav .line {
     display: none; }
@@ -96,7 +96,10 @@ nav {
       nav .social .icon-containers a {
         display: flex;
         align-items: center;
-        justify-content: center; }
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%; }
     nav .social .icon-containers:hover {
       cursor: pointer;
       transform: scale(1.05); }
